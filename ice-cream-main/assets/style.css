@@ -1,0 +1,108 @@
+/* Styling dasar tetap sama */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8db94;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 600px;
+  width: 700px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+button {
+  background-color: #f4c531;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Menambahkan transisi */
+}
+
+button:hover {
+  background-color: #e0b020; /* Warna saat di-hover */
+  transform: scale(1.05); /* Membesarkan tombol sedikit saat di-hover */
+}
+
+.popsicle {
+  width: 180px;
+  height: 300px;
+  position: relative;
+  top: 45px;
+  border-radius: 90px 90px 20px 20px;
+}
+
+.popsicle:before {
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  right: 20px;
+  top: 60px;
+}
+
+.popsicle:after {
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 30px;
+  background-color: #dba55b;
+  top: 300px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.popsicle-1 {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #ff7eaf 0,
+    #ff7eaf 20px,
+    #ff0565 20px,
+    #ff0565 40px
+  );
+}
+
+.popsicle-2 {
+  background-size: 60px 300px;
+  background-image: radial-gradient(
+    circle at 30px 53px,
+    #521a01 80px,
+    #ffba00 81px
+  );
+}
+
+.popsicle-3 {
+  background-color: #5e3a16;
+  background-image: radial-gradient(#c39a6b 4px, transparent 4px);
+  background-size: 30px 30px;
+}
